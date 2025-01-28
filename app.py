@@ -160,7 +160,7 @@ with feature_eng:
 
 
 	def fetch_movie_image(movie_title):
-	    api_key = os.getenv("api_key")
+	    api_key = os.getenv("API_KEY")
 	    base_url = 'http://www.omdbapi.com/?apikey=' + api_key + '&t='
 	    response = requests.get(base_url + movie_title)
 	    movie_data = response.json()
